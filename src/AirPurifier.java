@@ -97,6 +97,7 @@ public class AirPurifier {
 
         System.out.println(mostPopularModel());
 
+
         // check airpurifierCount()
         airpurifierCount();
     }

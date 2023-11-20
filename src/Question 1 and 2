@@ -23,6 +23,7 @@
     - mostPopularModel() ดูค่าของเครื่องที่ผลิตดีที่สุด
     - airpurifierCount() ดูค่าของเครื่องทั้งหมด
 2. how do we plan to implement
+
     Fields
     make: String
     model: String

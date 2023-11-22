@@ -1,0 +1,42 @@
+1. description of air purifier class
+  1.1 what should be instance variables?
+    - make เป็น String ที่เก็บชื่อยี่ห้อ
+    - model เป็น String ที่เก็บชื่อโมเดล
+    - price เป็น double ที่เก็บราคา
+    - mode เป็น String ที่เก็บโหมดการทำงานของเครื่อง โดยมีทั้งหมดสามโหมดได้แก่ auto, self, night
+      ซึ่ง set default เป็น auto ในตอนแรก
+    - fanSpeed เป็น int ที่เก็บค่าความเร็วพัดลม
+    - power เป็น boolean เก็บค่าว่าเครื่องเปิดหรือปิด
+  1.2 what should be instance method?
+    - turnOn() เป็น method ที่เอาไว้เปิดเครื่อง
+    - turnOff() เป็น method ที่เอาไว้ปิดเครื่อง
+    - setMode() เป็น method ที่เอาไว้ set mode เครื่องโดยเมื่อโหมดเป็น
+      auto จะ set fanSpeed เป็น 50
+      night จะ set fanSpeed เป็น 20
+      self จะ set fanSpeed ตามข้อมูลที่ป้อนเข้ามตามแป้นพิมพ์
+    - AirPurifiier() เป็น constructor ในการสร้าง air purifier และตั้งค่าเบื่องต้นประกอบไปด้วย
+      make model price allModel และ modelCount
+  1.3 what should be class variables?
+    - LinkedList<Integer> modelCount เก็บจำนวนที่ผลิตของ model แต่ละรุ่น(ในที่นี้นับแค่รุ่น ไม่นับยี่ห้อ)
+    - LinkedList<String> allModel เก็บชื่อ model ทั้งหมดของ air purifier
+  1.4 what should be class method?
+    - mostPopularModel() ดูค่าของเครื่องที่ผลิตดีที่สุด
+    - airpurifierCount() ดูค่าของเครื่องทั้งหมด
+2. how do we plan to implement
+
+    Fields
+    make: String
+    model: String
+    price: double
+    mode: String
+    power: boolean
+    fanSpeed: int
+    modelCount: LinkedList<Integer>
+    allModel: LinkedList<String>
+
+    Methods
+    turnOn() : void
+    turnOff() : void
+    setMode(String) : void
+    mostPopularModel() : String
+    airpurifierCount() : void
